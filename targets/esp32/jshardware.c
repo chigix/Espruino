@@ -443,7 +443,7 @@ bool CALLED_FROM_INTERRUPT jshGetWatchedPinState(IOEventFlags eventFlag) { // ca
 bool jshCanWatch(
     Pin pin //!< The pin that we are asking whether or not we can watch it.
   ) {
-  return pin == 0 || ( pin >= 12 && pin <= 19 ) || pin == 21 ||  pin == 22 || ( pin >= 25 && pin <= 27 ) || ( pin >= 34 && pin <= 39 );
+  return pin == 0 || pin == 5 || pin == 9 || ( pin >= 12 && pin <= 19 ) || pin == 21 ||  pin == 22 || pin == 23 || ( pin >= 25 && pin <= 27 ) || ( pin >= 34 && pin <= 39 );
 }
 
 
